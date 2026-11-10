@@ -159,7 +159,7 @@
             const h = HOUSES[id];
             if (!h) return showPicker();
             noArNote.style.display = 'none';
-            viewer.src = h.file;           // iPhone AR is generated from the .glb automatically
+            viewer.setAttribute('src', h.file);          // iPhone AR is generated from the .glb automatically
             titleEl.textContent = h.name;
             document.title = h.name;
             picker.classList.add('hidden');
